@@ -8,8 +8,8 @@ const $saveNoteBtn = $(".save-note");
 const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
-// data is used to keep track of the note in the textarea
-let data = {};
+// data is used to keep track of the note in the Textarea
+let data = {}; 
 
 // A function for getting all notes from the db json file
 // note that here we are using JQuery instead of vanila JS, and we are using ajax instead of fetch 
@@ -32,7 +32,7 @@ const saveNote = (note) => {
 // A function for deleting a note from the db
 const deleteNote = (id) => {
   return $.ajax({
-    url: "api/notes/" + id,
+    url: "api/notes/" + id, 
     method: "DELETE",
   });
 };
