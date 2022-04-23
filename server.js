@@ -26,6 +26,17 @@ app.use(express.json())// The express.json() method we used takes incoming POST 
 //the public folder) and instruct the server to make these files static resources.e so like html can use style.css 
 //realated to it and javascript related to it 
 app.use(express.static('public'));
+// this is to start listening to the server 
+
+// Routes for HTML
+app.get('/notes', (req,res) => {
+  res.sendFile(path.join(__dirname,"/public/notes.html"))
+})
+
+app.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname, "/public/index.html"));
+})
+
 
 // start the server. i also have nodemone package installed, to restart the server automatically with typing npm run dev
 app.listen(PORT, () => {
