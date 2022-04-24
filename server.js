@@ -9,7 +9,7 @@ const path = require('path');
 // require uuid to get a unique ID for every data object  in the json file
 const uuid = require('uuid') // or we can use crypto ==>  const crypto = require('crypto'); 
 
-const {findById, validateInput } = require('./notes');
+const { findById, validateInput } = require('./lib/notes');
   console.log({findById});
 // const { DH_CHECK_P_NOT_SAFE_PRIME } = require("constants");
 
