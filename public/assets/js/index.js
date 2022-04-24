@@ -1,3 +1,15 @@
+//styling my console
+console.log('%cHello and welcom',
+  `
+  background-color: rgb(53, 151, 151);
+  padding:1rem;
+  color:black;
+  font-size:15px;
+  border-radius:.5em;
+  border: 2px solid black;
+  `
+  )
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -40,7 +52,7 @@ const getNotes = () =>
   });
 
 
-  // A function for saving a note to the db
+// A function for saving a note to the db
 const saveNote = note =>
   fetch('/api/notes', {
     method: 'POST',

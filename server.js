@@ -31,16 +31,6 @@ app.use(express.json())// The express.json() method we used takes incoming POST 
 //the public folder) and instruct the server to make these files static resources.e so like html can use style.css 
 //realated to it and javascript related to it 
 app.use(express.static('public'));
-// this is to start listening to the server 
-
-// Routes for HTML
-app.get('/notes', (req,res) => {
-  res.sendFile(path.join(__dirname,"/public/notes.html"))
-})
-
-app.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname, "/public/index.html"));
-})
 
 
 
@@ -106,6 +96,20 @@ app.delete("/api/notes/:id", (req, res) => {
   fs.writeFileSync("./dataFile/db.json", JSON.stringify(delNote));
   // send the data back to the user after the deleted data
   res.json(delNote);
+})
+
+
+
+
+// Routes for HTML  
+// NOTE: make sure you add the API routes first then the HTML routes, if not then you wont get the app.get('*') to work.
+app.get('/notes', (req,res) => {
+  res.sendFile(path.join(__dirname,"/public/notes.html"))
+})
+
+// Get index.html when visiting localhost:3000/randomText
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname, "/public/index.html"));
 })
 
 
