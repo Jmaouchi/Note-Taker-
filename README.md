@@ -25,7 +25,7 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
 
   * [Title](#title)
   * [About](#about)
-  * [Built](#languages)
+  * [Built](#Technology)
   * [Instalation](#header.instal)
   * [Usage](header.usage)
   * [License](#header.license)
@@ -38,32 +38,52 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
     An app that can be used to write, save, and delete notes.
     
 
-  # Built With:
-    HTML, CSS, JavaScript, Bootstrap, Node.js
+  # Technology :
+
+    1. JavaScript 
+
+
+    2. CSS (stylesheet)
+
+
+    3. Bootstrap:  CSS framework 
+
+
+    4. HTML
+
+
+    5. Express.js :
+
+    Web Applications : Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+
+    APIs : With a myriad of HTTP utility methods and middleware, creating a robust API is quick and easy.
+
+    Performance : Express provides a thin layer of fundamental web application features, without obscuring Node.js features.
+
+    6. Node.js :
+
+    Node.js is an open-source and cross-platform JavaScript runtime environment.
+
+    A Node.js app is run in a single process, without creating a new thread for every request.
+
+    Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking.
+
+    7. uuid : Creates random unique id's.
     
 
-  # Instalation: 
-
-  . clone this repo to your machine
-  . npm i fs, npm i express, npm i uuid, npm i -D nodemon
-  . npm run dev ( to run the app with nodemon)  
-  
-  
-  # Watch me do it here: ==>  https://github.com/Jmaouchi/README_Generator-/issues/9
-
-  ![](assets/images/test.gif)
-
-
-
-
     
-  # Usage:
+  # Instalation:
 
     . Clone this repository to use this application on local machine, then npm i 
 
+
     . To install necessary dependencies, run the following command :
 
-      npm i 
+      npm i fs, npm i express, npm i uuid, npm i -D nodemon 
+
+
+    . npm run dev ( to run the app with nodemon)  
+    
 
     . The application will be invoked with the following command: This will start localhost server on PORT 3000.
 
@@ -73,6 +93,13 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
     . Open browser and type http://localhost:3000/ to run this application on your local machine
 
   
+
+
+  # Watch me do it here: by clicking here 
+  ![](assets/images/test.gif)
+
+
+
 
 
   ## Link:  
