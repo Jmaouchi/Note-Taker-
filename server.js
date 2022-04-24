@@ -1,13 +1,14 @@
+// require experss to build a server and run it.
 const express = require('express');
+// require file system 
 const fs = require('fs');
 // get the data from the db.json file
 const data  = require('./dataFile/db.json');
 // setup path to use it while pathing files 
 const path = require('path');
-// const uuid = require("uuid");
-const uuid = require('uuid')
+// require uuid to get a unique ID for every data object  in the json file
+const uuid = require('uuid') // or we can use crypto ==>  const crypto = require('crypto'); 
 
-// const crypto = require('crypto');
 const {findById, validateInput } = require('./notes');
   console.log({findById});
 // const { DH_CHECK_P_NOT_SAFE_PRIME } = require("constants");
@@ -68,16 +69,14 @@ app.post('/api/notes', (req, res) => {
     // Since we are getting data from the user as regular text, get the data from the json file then parse it to be able to add that user data
     // to the json file, if not it wont work, due to data from my json file is formated as json 
     const notesFromDB = JSON.parse(fs.readFileSync('./dataFile/db.json'));
-    // set an id based on what the next index of the array will be
-    // i also got the uuid package to create an id for every object in my data array, but i used this method since i added an API
-    // to get a single object with its own id (since uuid is a big number. both are working but uuid is more secure)
-    // req.body.id = notesFromDB.length.toString();
    
     // UUID will add an unique ID to every sigle element in our file, to prevent mix infos 
 
     // Set the data that we are getting form the user in a variable called newNote
     const newNote = req.body;
     newNote.id = uuid.v1();  // this is if want to use the uuid methode 
+    // we alson can use  req.body.id = notesFromDB.length.toString(); set an ID based on what the next index of the array will be 
+    // but after a delete method this method can cause problems for us by creating same id's
   
     // push the user input into our existing data
     notesFromDB.push(newNote)
@@ -92,12 +91,14 @@ app.post('/api/notes', (req, res) => {
 })
 
 
-//delete notes from db
+//delete notes from dataFile
 app.delete("/api/notes/:id", (req, res) => {
   const notes = JSON.parse(fs.readFileSync("./dataFile/db.json"));
   // filter the data that is in the json file, and check the id if its matching to the user request id, if so delete it from the file 
   const delNote = notes.filter((rmvNote) => rmvNote.id !== req.params.id);
+  // write the json file with after the deleted data
   fs.writeFileSync("./dataFile/db.json", JSON.stringify(delNote));
+  // send the data back to the user after the deleted data
   res.json(delNote);
 })
 
