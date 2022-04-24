@@ -46,15 +46,15 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
   **2. [CSS](https://css.com)**
 
 
-  **1. [Bootsrtap](hhtps://bootstrap.com/)**  
+  **3. [Bootsrtap](https://bootstrap.com/)**  
 
   * CSS framework 
 
 
-  **3. [HTML](https://html.com)**
+  **4. [HTML](https://html.com/)**
 
 
-  **4. [Express.js](https://expressjs.com/)** :
+  **5. [Express.js](https://expressjs.com/)** :
 
   * Web Applications : Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
@@ -63,7 +63,7 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
   * Performance : Express provides a thin layer of fundamental web application features, without obscuring Node.js features.
 
 
-  **2. [Node.js](https://nodejs.org/en/)** : 
+  **6. [Node.js](https://nodejs.org/en/)** : 
 
   * Node.js is an open-source and cross-platform JavaScript runtime environment.
 
@@ -71,7 +71,7 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
 
   * Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking.
 
-  **3. [uuid](https://www.npmjs.com/package/uuid)** : Creates random unique id's.
+  **7. [uuid](https://www.npmjs.com/package/uuid)** : Creates random unique id's.
     
 
     
