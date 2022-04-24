@@ -40,19 +40,19 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
 
   # Technology :
 
-    1. JavaScript 
+    ## JavaScript 
 
 
-    2. CSS (stylesheet)
+    ## CSS (stylesheet)
 
 
-    3. Bootstrap:  CSS framework 
+    ## Bootstrap: 
+       CSS framework 
+
+    ## HTML
 
 
-    4. HTML
-
-
-    5. Express.js :
+    ## Express.js :
 
     Web Applications : Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
@@ -60,7 +60,7 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
 
     Performance : Express provides a thin layer of fundamental web application features, without obscuring Node.js features.
 
-    6. Node.js :
+    ## Node.js :
 
     Node.js is an open-source and cross-platform JavaScript runtime environment.
 
@@ -68,7 +68,8 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
 
     Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking.
 
-    7. uuid : Creates random unique id's.
+    ## uuid :
+       Creates random unique id's.
     
 
     
