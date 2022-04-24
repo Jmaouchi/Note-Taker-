@@ -1,4 +1,4 @@
-// require experss to build a server and run it.
+// require experss 
 const express = require('express');
 
 // set a port number for the server 
@@ -18,7 +18,7 @@ const uuid = require('uuid') // or we can use crypto ==>  const crypto = require
 
 const { findById, validateInput } = require('./lib/notes');
 
-
+// init express
 const app = express();
 
 // Middleware. parse incoming string or array data (it will parse any data that is coming from the outside of the server)

@@ -1,5 +1,5 @@
-//styling my console
-console.log('%cHello and welcom',
+//styling my console 
+console.log('%cHello and welcom to my console',
   `
   background-color: rgb(53, 151, 151);
   padding:1rem;
