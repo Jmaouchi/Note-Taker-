@@ -110,10 +110,8 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
 
 
 
-  # Watch me do it here: by clicking here 
-  ![](assets/images/test.gif)
-
-
+  # Watch me do it here: by clicking here  https://github.com/Jmaouchi/Note-Taker-/issues/4
+  
 
 
   ## Link:  
