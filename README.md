@@ -40,7 +40,7 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
 
   # Technology
 
-    * [Title](#JavaScript) 
+    *[Title](#JavaScript) 
 
 
     * [css](#CSS) (stylesheet)
