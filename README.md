@@ -38,15 +38,15 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
     An app that can be used to write, save, and delete notes.
     
 
-  # Technology :
+  * [Title](#Technology)
 
-    ## JavaScript 
-
-
-    ## CSS (stylesheet)
+    * [Title](#JavaScript) 
 
 
-    ## Bootstrap: 
+    * [Title](#CSS) (stylesheet)
+
+
+    * [Title](# Bootstrap) 
        CSS framework 
 
     ## HTML
