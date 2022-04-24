@@ -1,21 +1,25 @@
 // require experss to build a server and run it.
 const express = require('express');
+
+// set a port number for the server 
+const PORT = process.env.PORT || 3000;
+
 // require file system 
 const fs = require('fs');
+
 // get the data from the db.json file
 const data  = require('./dataFile/db.json');
+
 // setup path to use it while pathing files 
 const path = require('path');
+
 // require uuid to get a unique ID for every data object  in the json file
 const uuid = require('uuid') // or we can use crypto ==>  const crypto = require('crypto'); 
 
 const { findById, validateInput } = require('./lib/notes');
-  console.log({findById});
-// const { DH_CHECK_P_NOT_SAFE_PRIME } = require("constants");
+
 
 const app = express();
-// set a port number for the server 
-const PORT = process.env.PORT || 3000;
 
 // Middleware. parse incoming string or array data (it will parse any data that is coming from the outside of the server)
 app.use(express.urlencoded({ extended: true }));
@@ -38,15 +42,17 @@ app.get('/', (req,res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 })
 
+
+
+// Routes for API's 
 // get data as json formating, from the http://localhost:3000/api/notes  route
 app.get("/api/notes", (req, res) => {
     res.sendFile(path.join(__dirname, "/dataFile/db.json"))
 });
 
 
-
 // get an elemenet from the json file based by its ID, while visiting the http://localhost:3000/api/note/idNumber
-// i added this even tho its not needed and also the UUID is not a single number.
+// i added this even tho its not needed and also the UUID is not a single number, so its hard to get it with the ID
 app.get('/api/note/:id', (req, res) => { //get is a route of the app method 
   // the req.params = url/params or it will add that param to the end of the url
   const result = findById(req.params.id, data);
