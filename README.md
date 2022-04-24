@@ -38,21 +38,21 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING O
     An app that can be used to write, save, and delete notes.
     
 
-  * [Title](#Technology)
+  # Technology
 
     * [Title](#JavaScript) 
 
 
-    * [Title](#CSS) (stylesheet)
+    * [css](#CSS) (stylesheet)
 
 
-    * [Title](# Bootstrap) 
+    * [bootstrap](# Bootstrap) 
        CSS framework 
 
-    ## HTML
+    * [HTML](# HTML)
 
 
-    ## Express.js :
+    * Express.js :
 
     Web Applications : Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
